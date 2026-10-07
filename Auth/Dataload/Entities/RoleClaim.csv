@@ -1,0 +1,6 @@
+﻿Id,RoleId,ClaimType,ClaimValue
+1,1079366a-1234-43d9-95e5-39575827878c,RolePermission,All
+2,2079366a-1234-43d9-95e5-39575827878c,RolePermission,Read
+3,3079366a-1234-43d9-95e5-39575827878c,RolePermission,Manage
+4,4079366a-1234-43d9-95e5-39575827878c,RolePermission,Edit
+5,5079366a-1234-43d9-95e5-39575827878c,RolePermission,None

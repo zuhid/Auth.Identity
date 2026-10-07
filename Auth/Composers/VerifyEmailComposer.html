@@ -1,0 +1,45 @@
+<div class="wrapper">
+  <table class="main-content" cellpadding="0" cellspacing="0">
+    <!-- Logo Section -->
+    <tr>
+      <td class="header">
+        <h1 style="margin: 0; color: #111827; font-size: 28px;">YourBrand</h1>
+      </td>
+    </tr>
+
+    <!-- Message Section -->
+    <tr>
+      <td class="body-text">
+        <h2 style="color: #111827; margin-top: 0;">Confirm your email address</h2>
+        <p>Hi {{fullName}},</p>
+        <p>Thanks for signing up! We're excited to have you on board. To get started, please click the button below to verify your email address.</p>
+      </td>
+    </tr>
+
+    <!-- Action Button -->
+    <tr>
+      <td class="button-container">
+        <a href="{{appUrl}}/account/verify-email/{{emailEncoded}}/{{token}}" class="button">Verify Email Address</a>
+      </td>
+    </tr>
+
+    <!-- Alternative Link -->
+    <!-- <tr>
+      <td class="body-text" style="font-size: 13px; border-top: 1px solid #e5e7eb; padding-top: 20px;">
+        <p>If the button doesn't work, copy and paste this link into your browser:</p>
+        <p style="word-break: break-all;"><a href="{{appUrl}}/account/verify-email/{{emailEncoded}}/{{token}}" style="color: #4f46e5;">{{appUrl}}/account/verify-email/{{emailEncoded}}/{{token}}</a>
+        </p>
+      </td>
+    </tr> -->
+  </table>
+
+  <!-- Footer -->
+  <table style="width: 100%; max-width: 600px; margin: 0 auto;">
+    <tr>
+      <td class="footer">
+        <p>© 2026 YourBrand Inc. | 123 Main St, City, Country</p>
+        <p>If you didn't create an account, you can safely ignore this email.</p>
+      </td>
+    </tr>
+  </table>
+</div>

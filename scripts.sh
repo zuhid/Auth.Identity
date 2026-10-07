@@ -85,8 +85,8 @@ run_test() {
   dotnet reportgenerator -reports:"$project/TestResults/*/coverage.cobertura.xml" -targetdir:"$project/TestResults/CoverageReport" -reporttypes:Html
   echo "$PWD/$project/TestResults/CoverageReport/index.html"
 
-  # firefox "$PWD/$project/TestResults/CoverageReport/index.html" &
-  google-chrome "$PWD/$project/TestResults/CoverageReport/index.html" &
+  firefox "$PWD/$project/TestResults/CoverageReport/index.html" &
+  # google-chrome "$PWD/$project/TestResults/CoverageReport/index.html" &
   # /opt/microsoft/msedge/msedge "$PWD/$project/TestResults/CoverageReport/index.html" &
 
   # "/c/Program Files/Mozilla Firefox/firefox.exe" "$PWD/$project/TestResults/CoverageReport/index.html" &
@@ -109,11 +109,12 @@ publish_docker() {
 ################################################## execute ##################################################
 clear
 # docker start $postgres_container
+# docker start mailpit
 # rebuild_postgres_server
 # update_dotnet_packages
 # solution_initilize
 
 # recreate_database "identity_csharp"
-update_database "Identity" "Identity"
-# run_test "Identity.Tests"
-# publish_docker Identity/Dockerfile Identity
+# update_database "Auth" "Auth"
+run_test "Auth.Tests"
+# publish_docker Auth/Dockerfile Auth

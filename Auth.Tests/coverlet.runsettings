@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat code coverage">
+        <Configuration>
+          <Include>[Zuhid.Auth]*</Include>
+					<Exclude>[Zuhid.Auth]*AuthContext,[Zuhid.Auth]*Migrations.*,[Zuhid.Auth]*Entities.*,[Zuhid.Auth]*Program,[Zuhid.Auth]Zuhid.Auth.Base.*</Exclude>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
